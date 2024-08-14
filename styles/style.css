@@ -167,7 +167,6 @@ button{
     box-shadow: 0 0 20px 0 none;
 }
 
-
 #video-tutorial{
     position: relative;
     top: -255px;
@@ -387,7 +386,7 @@ select {
 
 /* meet out team section style */
 .team{
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 .team-info{
@@ -439,6 +438,47 @@ select {
     /* margin-left: 20px; */
     padding-left: 20px;
 }
+
+
+/* creative section styles */
+.creative{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.creative-info{
+    /* border: 2px solid blue; */
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+.creative-header{
+    margin-bottom: 20px;
+}
+
+.creative-container{
+    margin-top: 60px;
+}
+
+.creative-cont{
+    display: grid;
+    grid-template-columns: repeat(4, 266px);
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.creative-cards{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px 20px 20px 20px;
+    border: none;
+    border-radius: 28px;
+}
+
+
+
+
 
 
 /* footer styles */
