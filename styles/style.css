@@ -7,7 +7,10 @@
   font-style: normal;
 }
 
-
+body{
+    max-width: 1518px;
+    margin: 0;
+}
 
 /* shared style */
 .bg-color{
@@ -21,9 +24,17 @@
 .colour-1{
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
+    opacity: 100%;
 }
 
-.buttons{
+.color-2{
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    font-weight: 900;
+    opacity: 100%;
+}
+
+.button-primary{
     background-color: #E6533C;
     color: #FFFFFF;
     padding: 16px 40px;
@@ -32,8 +43,6 @@
     border: none;
     border-radius: 40px;
 }
-
-
 
 
 /* header styles */
@@ -87,14 +96,32 @@ header{
 /* banner styles */
 .banner{
     margin: 0 155px;
+    
+
 }
 
+.banner-container{
+    width: 475px;
+    padding-right: 360px;
+    
+}
 .banner-title{
     font-weight: 900;
     font-size: 4.4rem;
     color: #FFFFFF;
+    margin-bottom: 28px;
 }
 
+.shaping{
+    /* miama font family apply */
+    font-weight: 400;
+    font-size: 4.4rem;
+
+}
+
+.banner-para{
+    margin-bottom: 35px;
+}
 .download{
     background-color: rgba(17, 17, 17, 1);
     color: #FFFFFF;
@@ -105,6 +132,56 @@ header{
     border-radius: 40px;
 }
 
+button{
+    margin-left: 15px;
+}
+
+.img-container{
+    /* margin-right: 0; */
+}
+
+.banner-img{
+    width: 350px;
+    height: 580px;
+    opacity: 100%;
+}
+
+#free-workout{
+    position: relative;
+    top: -460px;
+    right: -220px;
+    text-align: start;
+}
+
+.card{
+    padding: 5px 18px 19px 18px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 0 20px 0 none;
+}
+
+
+#video-tutorial{
+    position: relative;
+    top: -255px;
+    left: -100px;
+    text-align: start;    
+}
+
+button > i{
+    font-size: 26px;
+    margin-top: 10px;
+    padding-right: 5px;  
+}
+
+#tutorial{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.space{
+    padding-left: 38px;
+}
 
 
 /* main styles */
