@@ -12,6 +12,10 @@
     <header class="header">
         <nav class="nav-bar display">
             <h3 class="brand">Fitness</h3>
+            <div class="bars">
+                <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
+            </div>
+
             <ul class="nav-links display">
                 <li class="nav-item">
                 <a href="" class="link item-home">Home
@@ -44,12 +48,16 @@
             <div class="img-container">
                 <img class="banner-img" src="images/Images 2.png" alt="">
 
-                <button id="free-workout" class="card colour-1"><span class="color-2">500+</span> <br>Free Workout Videos</button>
+                <button id="free-workout" class="card colour-1"><span class="color-2 small">500+</span> <br>Free Workout Videos</button>
 
                 <button id="video-tutorial" class="card colour-1">
-                <i class="fa-solid fa-circle" style="color: #e6533c;"></i> 
-                <span id="tutorial" class="color-2">350+</span>
-                <br> <span class="space">Video tutorial</span></button>
+                
+                <i class="fa-solid fa-circle fa-2xl icon-circle" style="color: #e6533c;"></i>
+
+                <i class="fa-solid fa-circle-play fa-2xl icon-play" style="color: #e6533c;"></i>
+
+                <span id="tutorial" class="color-2 small">350+</span>
+                <br> <span class="space">Video tutorial</span></button>   
             </div>
         </div>
     </header>
@@ -150,23 +158,21 @@
                     <div class="form-container">
                         <form class="form-cont">
                             <div class="box-1">
-                                <label for="height">
-                                    <input type="text" id="text" placeholder="Height/cm">
+                                <label for="height">   
                                 </label>
-                                
+                                <input type="text" id="height" placeholder="Height/cm">
                             </div>
                             
                             <div class="box-2">
                                 <label for="weight">
-                                    <input type="text" id="text" placeholder="Weight/kg">
                                 </label>
-                                
+                                <input type="text" id="weight" placeholder="Weight/kg">
                             </div>
 
                             <div class="box-3">
                                 <label for="age">
-                                    <input type="text" id="text" placeholder="Age">
                                 </label>
+                                <input type="text" id="age" placeholder="Age">
                             </div>
     
                             <div class="box-4">
