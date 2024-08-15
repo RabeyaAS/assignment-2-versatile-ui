@@ -132,6 +132,7 @@ body{
 .banner-para{
     margin-bottom: 35px;
 }
+
 .download{
     background-color: rgba(17, 17, 17, 1);
     color: #FFFFFF;
@@ -161,7 +162,7 @@ button{
 }
 
 .card{
-    padding: 5px 18px 19px 18px;
+    padding: 9px 18px 19px 18px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 12px;
     box-shadow: 0 0 20px 0 none;
@@ -171,7 +172,31 @@ button{
     position: relative;
     top: -255px;
     left: -100px;
-    text-align: start;    
+    text-align: start;  
+    padding-bottom: 9px;
+}
+
+.btn-2{
+    display: grid;
+    grid-template-columns: repeat(2, 187px);
+    
+}
+
+.change{
+    margin-left: 40px;
+    position: absolute;
+    top: 10px;
+}
+
+.change-2{
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+}
+
+.icon{
+    text-align: start;
+    margin-top: 30px;
 }
 
 .icon-play{
@@ -179,16 +204,15 @@ button{
 }
 
 .icon-circle{
-
-
+    display: contents;
 }
 
 
 
 button > i{
-    font-size: 26px;
+    /* font-size: 26px;
     margin-top: 10px;
-    padding-right: 5px;  
+    padding-right: 5px;   */
 }
 
 #tutorial{
@@ -556,7 +580,7 @@ select {
 
 @media screen and (max-width:576px) {
     body{
-        /* width: 50%; */
+        width: auto;
     }
     .nav-links{
         display: none;
@@ -574,29 +598,66 @@ select {
 
     .banner{
         margin: auto;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .banner-container{
         padding: 0;
-        width: 440px;
+        width: 330px;
+        margin-bottom: 50px;
     }
 
-    .banner-img{
-        margin-left: 27px;
+    .banner-title{
+        font-size: 2.25rem;
+    }
+
+    .shaping{
+        font-size: 2.25rem;
+    }
+    
+    .button-primary{
+        width: 155px;
+        padding: 16px 20px;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .download{
+        width: 155px;
+        padding: 16px 20px;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    button{
+        margin-left: 0;
+        /* margin-right: 12px; */
+    }
+
+    .join-btn{
+        margin-right: 10px;
+    }
+    .card{
+        padding: 10px 10px 19px 12px;
     }
 
     #free-workout{
         position: relative;
         top: -530px;
-        right: -200px;
+        right: -190px;
     }
 
     #video-tutorial{
         position: relative;
-        top: -300px;
+        top: -440px;
         left: 5px;
+    }
+
+    .btn-2{
+        display: grid;
+        grid-template-columns: repeat(2, 178px);
+        
     }
 
     .icon-circle{
@@ -607,13 +668,38 @@ select {
         display: contents;
     }
 
-    .card{
-        padding: 10px 5px 19px 5px;
+    .change{
+        position: absolute;
+        left: 13px;
+    }
+    .change-2{
+        position: absolute;
+        bottom: 20px;
+        left: 54px;
     }
 
     .small{
         font-size: 2rem;
     }
+
+
+    /* 
+    
+
+
+.change{
+    margin-left: 40px;
+    position: absolute;
+    top: 10px;
+}
+
+
+
+
+
+
+
+    */
 
     .display{
         flex-direction: column;
