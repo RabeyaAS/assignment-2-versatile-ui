@@ -1,5 +1,4 @@
 
-
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -8,10 +7,9 @@
 }
 
 body{
-    /* max-width: 1518px; */
+    /* max-width: 1518px; same as 100% of my screen*/
     max-width: 100%;
     margin: 0 auto;
-    border: 3px solid red;
 }
 
 /* shared style */
@@ -68,7 +66,6 @@ body{
 }
 
 
-/* nav styles */
 .brand{
     color: #E6533C;
     font-weight: 800;
@@ -113,16 +110,16 @@ body{
     visibility: hidden;
 }
 
-/* banner styles */
+
 .banner{
     margin: 0 155px;
 }
 
 .banner-container{
     width: 500px;
-    padding-right: 280px;
-    
+    padding-right: 280px; 
 }
+
 .banner-title{
     font-weight: 900;
     font-size: 4.4rem;
@@ -149,10 +146,6 @@ body{
     font-size: 1.1rem;
     border: 1px solid #FFFFFF;
     border-radius: 40px;
-}
-
-button{
-    /* margin-left: 15px; */
 }
 
 .banner-img{
@@ -219,14 +212,11 @@ button{
 }
 
 
-/* main styles */
 .main{
-    /* width: 1440px; */
     margin: 0 auto;
 }
 
 
-/* habbit section styles */
 .habbit{
     margin-bottom: 200px; 
 }
@@ -268,7 +258,6 @@ button{
 }
 
 
-/* run extra section styles */
 .run{
     margin-bottom: 200px;
 }
@@ -311,14 +300,13 @@ button{
     margin: 46px 5px;
 }
 
-/* BMI section style */
+
 .bmi{
     margin-bottom: 200px;
 }
 
 .bmi-info{
     text-align: start;
-    /* border: 2px solid green; */
     width: 600px;
     justify-content: center;
     margin-left: 490px;
@@ -339,7 +327,6 @@ button{
 .bmi-chart{
     margin-top: 30px;
     margin-left: 190px;
-    /* border: 2px solid darkgoldenrod; */
 }
 
 .bmi-title{
@@ -360,7 +347,6 @@ th, td{
 }
 
 .bmi-cal{
-    /* border: 2px solid palegreen; */
     margin-top: 30px;
     margin-right: 190px;
 }
@@ -369,7 +355,6 @@ th, td{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 60px);
-    /* border: 2px solid yellow; */
     gap: 12px;  
 }
 
@@ -410,13 +395,11 @@ select {
 }
 
 
-/* meet out team section style */
 .team{
     margin-bottom: 200px;
 }
 
 .team-info{
-    /* border: 2px solid blue; */
     width: 50%;
     margin: 50px auto;
     text-align: center;
@@ -463,14 +446,12 @@ select {
 }
 
 
-/* creative section styles */
 .creative{
     margin-top: 200px;
     margin-bottom: 200px;
 }
 
 .creative-info{
-    /* border: 2px solid blue; */
     width: 40%;
     text-align: center;
     margin: auto;
@@ -505,7 +486,6 @@ select {
     transform: translateX(-50px) translateY(-80px);
 }
 
-/* footer styles */
 .footer{
     background-color: rgba(255, 255, 255, 0.1);
     margin-bottom: 0;
@@ -516,13 +496,11 @@ select {
     display: flex;
     text-align: start;
     justify-content: space-evenly;
-    /* border: 2px solid aquamarine; */
     padding-bottom: 60px;
 }
 
 .footer-cont{
     width: 32%;
-    /* border: 3px solid mediumseagreen; */
     padding-top: 10px;
 }
 
@@ -535,13 +513,11 @@ select {
 .get-cont{
     display: grid;
     grid-template-columns: repeat(2, 220px);
-    /* border: 4px solid burlywood; */
     gap: 50px;
     padding-top: 50px;
 }
 
 .get-started{
-    /* border: 2px solid red; */
     padding-left: 20px;
 }
 
@@ -572,11 +548,10 @@ select {
 
 @media screen and (max-width: 576px) {
     body{
-        /* margin-right: 0; */
-        /* padding-right: 0; */
+        width: auto;
     }
     .brand{
-        margin-right: 200px;
+        margin-right: 170px;
     }
     .nav-links{
         display: none;
@@ -584,6 +559,7 @@ select {
     
     .bars{
         visibility: visible;
+        text-align: end;
     }
 
     .nav-bar{
@@ -600,7 +576,7 @@ select {
 
     .banner-container{
         padding: 0;
-        width: 360px;
+        width: 350px;
         margin-bottom: 50px;
     }
 
@@ -635,7 +611,7 @@ select {
         margin-right: 10px;
     }
     .card{
-        padding: 10px 10px 19px 12px;
+        padding: 8px 15px 16px 16px;
     }
 
     #free-workout{
@@ -644,9 +620,13 @@ select {
         right: -190px;
     }
 
+    .free-size{
+        font-size: 0.8rem;
+    }
+
     #video-tutorial{
         position: relative;
-        top: -440px;
+        top: -420px;
         left: 5px;
     }
 
@@ -664,7 +644,7 @@ select {
         visibility: visible;
         position: absolute;
         left: 14px;
-        margin-top: 4px;
+        margin-top: 6px;
     }
 
     .change{
@@ -673,7 +653,7 @@ select {
     }
     .change-2{
         position: absolute;
-        bottom: 20px;
+        bottom: 15px;
         left: 54px;
     }
 
@@ -722,6 +702,11 @@ select {
 
     .running-img{
         padding-left: 4px;
+        padding-right: 15px;
+    }
+
+    .img-run{
+        width: 100%;
     }
 
     .bmi{
@@ -734,16 +719,18 @@ select {
     }
     
     .bmi-parent{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 340px);
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .bmi-chart{
-        margin-left: 30px;
+        margin-left: 0;
     }
 
     .bmi-cal{
-        margin-left: 30px;
-        margin-right: 10px;
+        width: 100%;
+        margin-right: 0;
     }
 
     .bmi-cal-info{
@@ -767,7 +754,8 @@ select {
     }
 
     .form-cont{
-        grid-template-columns: repeat(2, 170px);   
+        grid-template-columns: repeat(2, 165px);
+        gap: 15px;
     }
 
     .button-container{
@@ -809,12 +797,16 @@ select {
 
     .team-container{
         width: auto;
-        padding-left: 7px;
     }
 
     .team-cont{
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
+        padding-right: 20px;
+    }
+
+    .team-img{
+        width: 100%;
     }
 
     .footer-container{
@@ -842,29 +834,29 @@ select {
         padding-left: 0;
     }
 
+}
 
-    @media screen and (min-width: 992px) {
-        body{
-            max-width: auto;
-        }
-        .nav-bar{
-            padding: 0 auto;
-        }
 
-        .brand{
-        }
-
+@media screen and (min-width: 992px) {
+    /* body{
+        width: auto;
+    }
+    .nav-bar{
+        padding: 0;
+        width: 100%;
     }
 
-    
-
-    
-
-    
-
+    .habbit-container{
+        display: grid;
+        grid-template-columns: repeat(4, 500px);
+        margin-left: 200px; */
+    }
 
 
 }
+
+
+
 
 
 
