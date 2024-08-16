@@ -8,8 +8,10 @@
 }
 
 body{
-    max-width: 1518px;
+    /* max-width: 1518px; */
+    max-width: 100%;
     margin: 0 auto;
+    border: 3px solid red;
 }
 
 /* shared style */
@@ -45,6 +47,7 @@ body{
     width: 210px;
     color: #FFFFFF;
     padding: 16px 40px;
+    margin-right: 14px;
     font-weight: 600;
     font-size: 1.1rem;
     border: none;
@@ -106,14 +109,18 @@ body{
     border-radius: 30px; 
 }
 
+.bars{
+    visibility: hidden;
+}
+
 /* banner styles */
 .banner{
     margin: 0 155px;
 }
 
 .banner-container{
-    width: 475px;
-    padding-right: 390px;
+    width: 500px;
+    padding-right: 280px;
     
 }
 .banner-title{
@@ -124,7 +131,7 @@ body{
 }
 
 .shaping{
-    /* miama font family apply */
+    font-family: 'Miama', sans-serif;                                          
     font-weight: 400;
     font-size: 4.4rem;
 }
@@ -145,7 +152,7 @@ body{
 }
 
 button{
-    margin-left: 15px;
+    /* margin-left: 15px; */
 }
 
 .banner-img{
@@ -178,41 +185,28 @@ button{
 
 .btn-2{
     display: grid;
-    grid-template-columns: repeat(2, 187px);
-    
+    grid-template-columns: repeat(2, 180px);
 }
 
 .change{
     margin-left: 40px;
     position: absolute;
-    top: 10px;
+    top: 6px;
 }
 
 .change-2{
     position: absolute;
-    bottom: 20px;
+    bottom: 14px;
     left: 60px;
 }
 
 .icon{
     text-align: start;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .icon-play{
-    display: none;
-}
-
-.icon-circle{
-    display: contents;
-}
-
-
-
-button > i{
-    /* font-size: 26px;
-    margin-top: 10px;
-    padding-right: 5px;   */
+    visibility: hidden;
 }
 
 #tutorial{
@@ -247,15 +241,13 @@ button > i{
 .habbit-heading{
     color: #FFFFFF;
     margin-bottom: 14px;
-    
 }
 
 .habbit-container{
     display: grid;
     grid-template-columns: repeat(4, 260px);
     justify-content: center;
-    gap: 40px;
-    
+    gap: 40px;   
 }
 
 .habbit-item{
@@ -363,7 +355,6 @@ button > i{
 }
 
 th, td{
-    /* border-collapse: collapse; */
     border: 2px solid rgba(255, 255, 255, 0.1);
     padding: 15px 18px;
 }
@@ -447,7 +438,6 @@ select {
     padding-left: 18px;
     padding-top: 25px;
     padding-bottom: 25px;
-    
 }
 
 .team-title{
@@ -465,12 +455,10 @@ select {
     width: 320px;
     height: 275px;
     border-radius: 18px;
-    margin-right: ;
 }
 
 .team-names{
     margin-top: -96px;
-    /* margin-left: 20px; */
     padding-left: 20px;
 }
 
@@ -509,6 +497,12 @@ select {
     padding: 40px 20px 20px 20px;
     border: none;
     border-radius: 28px;
+    transition: background-color 2s linear 1s, transform 1s ease-in 1s;
+}
+
+.creative-cards:hover{
+    background-color: rgba(30, 213, 219, 0.1);
+    transform: translateX(-50px) translateY(-80px);
 }
 
 /* footer styles */
@@ -574,25 +568,27 @@ select {
     padding-top: 10px;
 }
 
-.bars{
-    display: none;
-}
+
 
 @media screen and (max-width:576px) {
     body{
-        width: auto;
+        /* margin-right: 0; */
+        /* padding-right: 0; */
+    }
+    .brand{
+        margin-right: 200px;
     }
     .nav-links{
         display: none;
     }
     
     .bars{
-        display: contents;
+        visibility: visible;
     }
 
     .nav-bar{
         display: grid;
-        grid-template-columns: repeat(2, 420px); 
+        grid-template-columns: repeat(2, 1fr); 
         padding: 5px 30px;
     }
 
@@ -604,18 +600,19 @@ select {
 
     .banner-container{
         padding: 0;
-        width: 330px;
+        width: 360px;
         margin-bottom: 50px;
     }
 
     .banner-title{
         font-size: 2.25rem;
+        width: 300px;
     }
 
     .shaping{
         font-size: 2.25rem;
     }
-    
+
     .button-primary{
         width: 155px;
         padding: 16px 20px;
@@ -632,7 +629,6 @@ select {
 
     button{
         margin-left: 0;
-        /* margin-right: 12px; */
     }
 
     .join-btn{
@@ -656,16 +652,19 @@ select {
 
     .btn-2{
         display: grid;
-        grid-template-columns: repeat(2, 178px);
-        
+        grid-template-columns: repeat(2, 168px);
+        position: absolute;    
     }
 
     .icon-circle{
-        display: none;
+        visibility: hidden;
     }
 
     .icon-play{
-        display: contents;
+        visibility: visible;
+        position: absolute;
+        left: 14px;
+        margin-top: 4px;
     }
 
     .change{
@@ -682,27 +681,12 @@ select {
         font-size: 2rem;
     }
 
-
-    /* 
-    
-
-
-.change{
-    margin-left: 40px;
-    position: absolute;
-    top: 10px;
-}
-
-
-
-
-
-
-
-    */
-
     .display{
         flex-direction: column;
+    }
+
+    .habbit{
+        margin-bottom: 70px;
     }
     
     .habbit-container{
@@ -719,11 +703,13 @@ select {
         padding: 0 50px;
     }
 
+    .run{
+        margin: 0 15px 70px 15px
+    }
     .run-container{
         flex-direction: column;
         width: auto;
         margin-top: 30px;
-        margin-left: 30px;
     }
 
     .running-cont{
@@ -735,7 +721,11 @@ select {
     }
 
     .running-img{
-        padding-left: 6px;
+        padding-left: 4px;
+    }
+
+    .bmi{
+        margin-bottom: 60px;
     }
 
     .bmi-info{
@@ -781,6 +771,11 @@ select {
         margin-left: 20px;
     }
 
+    .creative{
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+
     .creative-info{
         width: auto;
         padding-left: 30px;
@@ -791,9 +786,15 @@ select {
         grid-template-columns: repeat(1, 250px);
     }
 
+    .creative-cards:hover{
+        background-color: rgba(30, 213, 219, 0.1);
+        transform: translateX(60px) translateY(-15px);
+    }
+
     .team{
         margin-left: 20px;
         margin-right: 20px;
+        margin-bottom: 70px;
     }
 
     .team-info{
@@ -804,8 +805,6 @@ select {
 
     .team-container{
         width: auto;
-        /* margin-left: 20px;
-        margin-right: 20px; */
         padding-left: 7px;
     }
 
@@ -817,23 +816,31 @@ select {
     .footer-container{
         flex-direction: column;
         margin-left: 30px;
+        padding-bottom: 30px;
     }
 
     .footer-cont{
         width: 76%;
     }
 
+    #foot-header{
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
     .get-cont{
         grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+        padding-top: 10px;
     }
 
     .get-started{
         padding-left: 0;
     }
 
-    .foot-para{
+    
 
-    }
+    
 
     
 
