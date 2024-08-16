@@ -570,7 +570,7 @@ select {
 
 
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
     body{
         /* margin-right: 0; */
         /* padding-right: 0; */
@@ -750,6 +750,10 @@ select {
         width: 85%;
     }
 
+    .box-5{
+        width: 350px;
+    }
+
     input[type=text]{
         width: 148px;
     }
@@ -836,6 +840,20 @@ select {
 
     .get-started{
         padding-left: 0;
+    }
+
+
+    @media screen and (min-width: 992px) {
+        body{
+            max-width: auto;
+        }
+        .nav-bar{
+            padding: 0 auto;
+        }
+
+        .brand{
+        }
+
     }
 
     
